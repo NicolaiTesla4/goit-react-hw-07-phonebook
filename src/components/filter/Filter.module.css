@@ -1,0 +1,16 @@
+.filter {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.filter input:hover {
+    border: 1px solid #2196f3;
+}
+
+.filter input:focus {
+    border: 1px solid #2196f3;
+}

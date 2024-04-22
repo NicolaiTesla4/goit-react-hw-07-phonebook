@@ -2,7 +2,7 @@ import { filterUser } from '../redux/contacts-selectors.js'
 import { useSelector, useDispatch } from 'react-redux'
 import { useState } from 'react'
 import ContactForm from './contact-form/ContactForm.jsx'
-import ContactList from './contact-list/ContactList.jsx'
+import ContactList from './contact-list/ContactList.jsx/index.js'
 import Filter from './filter/Filter.jsx'
 import css from './App.module.css';
 
