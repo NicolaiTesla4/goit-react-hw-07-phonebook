@@ -1,4 +1,4 @@
-import usersReducer from './contacts-slices';
+import usersReducer from './contacts-slices.js';
 import { configureStore } from '@reduxjs/toolkit';
 
 

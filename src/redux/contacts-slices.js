@@ -11,7 +11,7 @@ const initialState = {
         filter: ""
     }
 
-    export const getContacts = createAsyncThunk('users/getContacts',() => { 
+    export const getContacts = createAsyncThunk('users/getContacts', () => { 
     return axios.get(url)
         .then(function(response){
         return response.data
