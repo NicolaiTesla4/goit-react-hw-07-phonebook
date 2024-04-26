@@ -13,7 +13,6 @@ export const addContact = createAction('users/addContact', (name, number) => {
 
 export const deleteContact = createAction('users/deleteContact')
 export const filterUser = createAction('users/filterUser', (filter) => { 
-
     return {
     payload: { 
     filter

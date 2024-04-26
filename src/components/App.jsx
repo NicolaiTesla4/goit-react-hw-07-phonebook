@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { filterUser } from '../redux/contacts-slices.js';
+import { filterUser } from '../redux/contacts-selectors.js';
 import { getContacts } from '../redux/contacts-slices.js';
 import ContactForm from './contact-form/ContactForm.jsx';
 import ContactList from './contact-list/ContactList.jsx';
