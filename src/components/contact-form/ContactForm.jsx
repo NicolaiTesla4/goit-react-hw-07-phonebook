@@ -10,7 +10,12 @@ export default function ContactForm() {
   const dispatch = useDispatch();
   const handleUpdateContacts = (e) => {
     e.preventDefault();
-    const form = e.target.form
+    const form = e.target.form;
+
+    if (!name.trim() || !number.trim()) {
+      alert('Please complete the information.');
+      return; // Si algún campo está vacío, no se envía el formulario
+    }
 
     if (users.some((contact) => contact.name.toLowerCase() === name.toLowerCase())) {
       alert(`${name} is already in contacts.`);
@@ -19,6 +24,8 @@ export default function ContactForm() {
     }
 
     form.reset()
+      setName(''); // Limpia el estado del nombre
+      setNumber(''); // Limpia el estado del número
   };
 
   return (
